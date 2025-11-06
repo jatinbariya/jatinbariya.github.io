@@ -1,2 +1,4 @@
-# jatinbariya.github.io
-Setting Root User Site
+# Jatin Bariya
+## Portfolio
+A Portfolio website designed to showcase Tools and Projects built by Jatin Bariya
+
