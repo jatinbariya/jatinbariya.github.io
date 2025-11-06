@@ -1,4 +1,4 @@
-# Jatin Bariya
-## Portfolio
-A Portfolio website designed to showcase Tools and Projects built by Jatin Bariya
+## Jatin Bariya
+
+A Portfolio website designed to showcase Tools and Projects crafted by Jatin Bariya
 
