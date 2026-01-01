@@ -1,8 +1,211 @@
 <html>
   <head>
-    <title>Jatin's Root User Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Codes Home Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #0f172a, #020617);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        /* 🎨 Animated Background Blobs */
+        .blob {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(45deg, #38bdf8, #a855f7);
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.6;
+            animation: float 12s infinite alternate ease-in-out;
+        }
+
+        .blob.one {
+            top: -100px;
+            left: -100px;
+        }
+
+        .blob.two {
+            bottom: -120px;
+            right: -120px;
+            background: linear-gradient(45deg, #22c55e, #06b6d4);
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0) translateX(0);
+            }
+            to {
+                transform: translateY(-40px) translateX(30px);
+            }
+        }
+
+        /* 🧊 Glass Card */
+        .card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 3rem 3.5rem;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+            max-width: 420px;
+            width: 90%;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 1.2rem;
+            color: #38bdf8;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.6rem;
+        }
+
+        p {
+            font-size: 1rem;
+            opacity: 0.85;
+            margin-bottom: 2rem;
+        }
+
+        /* ✨ Animated Loader */
+        .loader {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            border-top: 5px solid #38bdf8;
+            animation: spin 1.2s linear infinite;
+            margin: 0 auto 1.8rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .footer {
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+
+        .footer span {
+            color: #38bdf8;
+        }
+
+        /* 📱 Responsive */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 2.4rem 2rem;
+            }
+        }
+        .sticker {
+            margin: 1.5rem auto 2rem;
+            animation: floatSticker 4s ease-in-out infinite;
+        }
+
+        @keyframes floatSticker {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+}
+
+    </style>
   </head>
-  <body>
-    <div><h3>Hello Jatin</h3></div>
-    </body>
+<body>
+
+    
+        <!-- Background Art -->
+        <div class="blob one"></div>
+        <div class="blob two"></div>
+    
+        <!-- Main Card -->
+        <div class="card">
+            <div class="logo">Jatin Codes</div>
+    
+            <div class="sticker">
+            <svg viewBox="0 0 200 120" width="160">
+            <!-- Terminal Body -->
+            <rect x="10" y="10" rx="12" ry="12" width="180" height="100"
+                  fill="rgba(255,255,255,0.08)" stroke="#38bdf8" stroke-width="2"/>
+    
+            <!-- Header Dots -->
+            <circle cx="30" cy="30" r="4" fill="#ef4444"/>
+            <circle cx="45" cy="30" r="4" fill="#facc15"/>
+            <circle cx="60" cy="30" r="4" fill="#22c55e"/>
+    
+            <!-- Code Lines -->
+            <text x="30" y="60" fill="#38bdf8" font-size="14" font-family="monospace">
+                &lt;code&gt;
+            </text>
+    
+            <text x="30" y="80" fill="#a855f7" font-size="14" font-family="monospace">
+                comingSoon
+            </text>
+    
+            <!-- Blinking Cursor -->
+            <rect x="130" y="68" width="8" height="14" fill="#38bdf8">
+                <animate attributeName="opacity"
+                         values="1;0;1"
+                         dur="1s"
+                         repeatCount="indefinite"/>
+            </rect>
+        </svg>
+    </div>
+
+
+        <!-- <h3>Hello Jatin</h3>  -->
+        <h1>Coming Soon</h1>
+        <p>Crafting something meaningful, modern & powerful for the web.</p>
+
+        <div class="footer">
+            🚀 Launching soon by <span>Jatin</span>
+        </div>
+    </div>
+
+</body>
 </html>
